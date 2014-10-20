@@ -1,0 +1,29 @@
+.scene {
+	background: url(../img/forest.jpg);
+	height: 2037px;
+	width: 4096px;
+	position: absolute;
+	top: -1400px;
+	left: -3200px;
+}
+
+#allieun img {
+	position: absolute;
+	top :1780px;
+	left: 3660px;
+	width: 100px;
+}
+
+#ennun img {
+	position: absolute;
+	top :1720px;
+	left: 3780px;
+	width: 100px;
+}
+
+#enndeux img {
+	position: absolute;
+	top :1800px;
+	left: 3800px;
+	width: 100px;
+}

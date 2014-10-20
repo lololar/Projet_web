@@ -2,36 +2,52 @@
 <html>
 <head>
 	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="css/infos.css"/>
+	<link rel="stylesheet" type="text/css" href="css/scene.css"/>
+	<link rel="stylesheet" type="text/css" href="css/gui.css"/>
 	<title>Test</title>
 </head>
 <body>
 	<div id="jeu">
-		<div id="fenetre">
-			<span id="menu">
-			<ul>
-				<li>Infos</li>
-				<li>Equipement</li>
-				<li>Stats</li>
-			</ul>
-			</span>
-			<span id="tab-contenu">
-			<div id="name">Ulrich</div>
-			<div id="classe"><p>Samurai</div>
-			<div id="rating"></div>
-			<img src="" id="portrait">
-			<dl>
-				<dt>Xp : </dt>
-				<dd>245</dd>
-				<dt>Hp : </dt>
-				<dd>120</dd>
-				<dt>Puissance : </dt>
-				<dd>15</dd>
-			</dl>
-			</span>
+		<div class="scene">
+			<div id="allieun">
+				<img src="img/idle-1-2-1.png" class="allie">
+			</div>
+			<div id="ennun">
+				<img src="img/idle-1.png" class="ennemi">
+			</div>
+			<div id="enndeux">
+				<img src="img/idle-1.png" class="ennemi">
+			</div>
 		</div>
-		<img src="" class="allie">
-		<img src="" class="ennemi" id="ennun">
-		<img src="" class="ennemi" id="enndeux">
+		<div id="fenetre">
+			<div id="info" class="content">
+				<ul>
+					<li class="selected">Infos</li>
+					<li>Equipement</li>
+					<li>Stats</li>
+				</ul>
+			</div>
+			<div id="tab-contenu">
+				<div id="name">Ulrich</div>
+				<div id="classe"><p>Samurai</div>
+				<div id="rating">
+					<div id="rating-indic"></div>
+				</div>
+				<img src="" id="portrait">
+				<dl>
+					<dt>Xp : </dt>
+					<dd class="xp">245</dd>
+					<dt>Hp : </dt>
+					<dd class="hp">120</dd>
+					<dt>Puissance : </dt>
+					<dd class="power">15</dd>
+				</dl>
+			</div>
+		<div id="equipement" class="content"></div>
+		<div id="stats" class="content"></div>
+		</div>
 	</div>
 </body>
 </html>
