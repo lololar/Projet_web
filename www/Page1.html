@@ -22,32 +22,39 @@
 			</div>
 		</div>
 		<div id="fenetre">
-			<div id="info" class="content">
+			<div id="menu">
 				<ul>
 					<li class="selected">Infos</li>
 					<li>Equipement</li>
 					<li>Stats</li>
 				</ul>
 			</div>
-			<div id="tab-contenu">
-				<div id="name">Ulrich</div>
-				<div id="classe"><p>Samurai</div>
-				<div id="rating">
-					<div id="rating-indic"></div>
-				</div>
-				<img src="" id="portrait">
-				<dl>
-					<dt>Xp : </dt>
-					<dd class="xp">245</dd>
-					<dt>Hp : </dt>
-					<dd class="hp">120</dd>
-					<dt>Puissance : </dt>
-					<dd class="power">15</dd>
-				</dl>
+			<div id="info" class="content">
+					<div id="name">Ulrich</div>
+					<div id="classe">Samurai</div>
+					<div id="rating">
+						<div id="rating-indic"></div>
+					</div>
+					<div id="portrait"></div>
+					<dl>
+						<dt>Xp</dt>
+						<dd class="xp">245</dd>
+						<dt>Hp</dt>
+						<dd class="hp">120</dd>
+						<dt>Puissance</dt>
+						<dd class="power">15</dd>
+					</dl>
 			</div>
-		<div id="equipement" class="content"></div>
-		<div id="stats" class="content"></div>
+			<div id="equipement" class="content invisible"></div>
+			<div id="stats" class="content invisible"></div>
 		</div>
+		<script>
+			function switchWindow(){
+				var win = document.getElementById('fenetre');
+				win.className = (win.className == "enabled")?"":"enabled";
+			}
+		</script>
+		<button id="menu-switch" onclick="switchWindow();">Menu</button>
 	</div>
 </body>
 </html>
